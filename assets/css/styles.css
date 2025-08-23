@@ -25,7 +25,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green-2);outline-of
 .footer h4{margin:.2rem 0 .2rem}.footer-links{list-style:none;margin:0;padding:0}.footer-links li{margin:6px 0}
 .lead{font-size:1.06rem;color:#424242}.center{text-align:center}.tiny{font-size:.9rem}.muted{color:var(--muted)}
 .btn{display:inline-block;background:#fff;color:#1b5e20;padding:12px 18px;border-radius:14px;border:2px solid var(--green);font-weight:700;box-shadow:var(--shadow);transition:transform .08s ease}
-.btn:hover{transform:translateY(-1px)} .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--border)} .btn.full{display:block;text-align:center;margin-top:10px}
+.btn:hover{transform:translateY(-1px)} .btn.ghost{background:transparent;color:#1b5e20;border:1px solid var(--green)}
 .link{font-weight:600}
 .checklist{list-style:none;padding-left:0;margin:0}
 .checklist li{position:relative;padding-left:26px;margin:8px 0}
@@ -39,11 +39,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green-2);outline-of
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .form-grid .full{grid-column:1/-1}
 label{font-weight:600;margin-bottom:6px;display:block}
-input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--ink)}
+input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:#fff;color:#212121}
 textarea{min-height:120px;resize:vertical}
 fieldset{border:1px solid var(--border);border-radius:14px;padding:14px 14px 8px}
 legend{padding:0 8px;color:#1b5e20;font-weight:700}
 .helper{font-size:.9rem;color:#555;margin-top:4px}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 small.disclaimer{display:block;color:#666;margin-top:8px}
+/* Blog list */
+.post-list{list-style:none;padding:0;margin:0}
+.post-list li{padding:14px 0;border-bottom:1px solid var(--border)}
+.post-list h3{margin:.2rem 0}
+.post-meta{color:#555;font-size:.95rem}
+.post-content p{margin:1rem 0}
 @media (max-width: 900px){ .form-grid{grid-template-columns:1fr} }
