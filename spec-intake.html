@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spec Intake | Lazy Dog Computing</title>
+  <meta name="description" content="Tell us about your goals so we can propose the right build.">
+  <meta name="theme-color" content="#2E7D32">
+  <meta name="keywords" content="custom gaming PC, video editing PC, creator workstation, flight simulator PC, driving simulator PC, HOTAS, yoke, rudder pedals, racing wheel, motion cockpit, Home Assistant, Raspberry Pi, smart home">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://lazydogcomputing.com/spec-intake.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spec Intake | Lazy Dog Computing">
+  <meta property="og:description" content="Tell us about your goals so we can propose the right build.">
+  <meta property="og:url" content="https://lazydogcomputing.com/spec-intake.html">
+  <meta property="og:image" content="https://lazydogcomputing.com/assets/icons/og-1200x630.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spec Intake | Lazy Dog Computing">
+  <meta name="twitter:description" content="Tell us about your goals so we can propose the right build.">
+  <meta name="twitter:image" content="https://lazydogcomputing.com/assets/icons/og-1200x630.png">
+</head>
+<body>
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="container nav-container">
+    <a class="logo" href="index.html" aria-label="Lazy Dog Computing Home">
+      <img src="assets/brand/ldc-logo.svg" alt="Lazy Dog Computing" class="logo-img">
+    </a>
+    <ul class="menu" role="menubar">
+      <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+      <li role="none"><a role="menuitem" href="systems.html">Custom Systems</a></li>
+      <li role="none"><a role="menuitem" href="smarthome.html">Smart Home</a></li>
+      <li role="none"><a role="menuitem" href="spec-intake.html">Spec Intake</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero">
+  <div class="container">
+    <h1>Spec Intake</h1>
+    <p class="lead">Give us the basics — we’ll come back with a parts list and options.</p>
+  </div>
+</header>
+
+<main class="container">
+  <form id="spec-intake-form" class="form card" novalidate>
+    <div class="form-grid">
+      <div>
+        <label for="name">Your Name *</label>
+        <input id="name" type="text" required placeholder="Sam Example">
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input id="email" type="email" required placeholder="you@example.com">
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="Optional">
+      </div>
+      <div>
+        <label for="company">Company / Org</label>
+        <input id="company" type="text" placeholder="Optional">
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>Build type</legend>
+      <div class="form-grid">
+        <label><input type="checkbox" name="buildType" value="Gaming"> Gaming</label>
+        <label><input type="checkbox" name="buildType" value="Video/Creator"> Video / Creator</label>
+        <label><input type="checkbox" name="buildType" value="Flight Simulation"> Flight Simulation</label>
+        <label><input type="checkbox" name="buildType" value="Driving Simulation"> Driving Simulation</label>
+      </div>
+    </fieldset>
+
+    <div class="form-grid">
+      <div class="full">
+        <label for="titles">Games / Sims / Software</label>
+        <textarea id="titles" placeholder="Example: MSFS 2024 (VR), DCS F-16, iRacing/ACC triples, DaVinci Resolve 4K H.265"></textarea>
+      </div>
+      <div>
+        <label>Resolution / Targets</label>
+        <div class="helper">Pick all that apply</div>
+        <label><input type="checkbox" name="resolution" value="1080p120+"> 1080p @ 120+ Hz</label><br>
+        <label><input type="checkbox" name="resolution" value="1440p144+"> 1440p @ 144+ Hz</label><br>
+        <label><input type="checkbox" name="resolution" value="4K60+"> 4K @ 60+ Hz</label><br>
+        <label><input type="checkbox" name="resolution" value="Triples"> Triple monitors</label><br>
+        <label><input type="checkbox" name="resolution" value="Ultrawide"> Ultrawide</label>
+      </div>
+      <div>
+        <label for="vr">VR?</label>
+        <select id="vr">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+          <option value="Maybe">Maybe</option>
+        </select>
+        <label for="headset" class="helper">Headset</label>
+        <input id="headset" type="text" placeholder="Quest, Reverb G2, Pimax, Varjo, other">
+      </div>
+      <div>
+        <label for="monitors">Monitors (count & model)</label>
+        <input id="monitors" type="text" placeholder="e.g., 3× 27” 1440p 165Hz">
+      </div>
+      <div>
+        <label for="budget">Budget Range (USD)</label>
+        <select id="budget">
+          <option value="Undecided">Undecided</option>
+          <option value="1500-2000">$1,500 – $2,000</option>
+          <option value="2000-3000">$2,000 – $3,000</option>
+          <option value="3000-4500">$3,000 – $4,500</option>
+          <option value="4500-6000">$4,500 – $6,000</option>
+          <option value="6000+">$6,000+</option>
+        </select>
+      </div>
+      <div>
+        <label for="storageOS">OS / Apps Drive</label>
+        <input id="storageOS" type="text" placeholder="e.g., 1TB NVMe">
+      </div>
+      <div>
+        <label for="storageMedia">Projects / Media</label>
+        <input id="storageMedia" type="text" placeholder="e.g., 2TB NVMe + 4TB SATA">
+      </div>
+      <div>
+        <label for="storageFootage">Footage / Archive</label>
+        <input id="storageFootage" type="text" placeholder="e.g., NAS / external / cloud">
+      </div>
+      <div>
+        <label for="noise">Noise Preference</label>
+        <select id="noise">
+          <option value="Silent">Silent</option>
+          <option value="Quiet">Quiet</option>
+          <option value="No preference">No preference</option>
+        </select>
+      </div>
+      <div>
+        <label for="formFactor">Form Factor</label>
+        <select id="formFactor">
+          <option value="No preference">No preference</option>
+          <option value="Mid-tower">Mid‑tower</option>
+          <option value="Small form factor">Small form factor</option>
+        </select>
+      </div>
+      <div>
+        <label for="timeline">Timeline</label>
+        <select id="timeline">
+          <option value="ASAP">ASAP</option>
+          <option value="2-4 weeks">2–4 weeks</option>
+          <option value="Next 1-2 months">Next 1–2 months</option>
+          <option value="Flexible">Flexible</option>
+        </select>
+      </div>
+      <div>
+        <label for="location">Location</label>
+        <input id="location" type="text" placeholder="City/State; local pickup or shipping">
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>Controllers & Cockpit</legend>
+      <div class="form-grid">
+        <div class="full">
+          <label>Controllers you use (check all that apply)</label>
+          <label><input type="checkbox" name="controllers" value="HOTAS"> HOTAS</label>
+          <label><input type="checkbox" name="controllers" value="HOSAS"> HOSAS</label>
+          <label><input type="checkbox" name="controllers" value="Yoke"> Yoke</label>
+          <label><input type="checkbox" name="controllers" value="Throttle"> Throttle</label>
+          <label><input type="checkbox" name="controllers" value="Rudder Pedals"> Rudder Pedals</label>
+          <label><input type="checkbox" name="controllers" value="Wheel Base/Wheel"> Wheel Base / Wheel</label>
+          <label><input type="checkbox" name="controllers" value="Pedals"> Pedals</label>
+          <label><input type="checkbox" name="controllers" value="Shifter"> Shifter</label>
+          <label><input type="checkbox" name="controllers" value="Handbrake"> Handbrake</label>
+          <label><input type="checkbox" name="controllers" value="Button Boxes"> Button Boxes</label>
+          <label><input type="checkbox" name="controllers" value="Motion Platform"> Motion Platform</label>
+        </div>
+        <div class="full">
+          <label for="cockpit">Cockpit / Mounts (model or plans)</label>
+          <input id="cockpit" type="text" placeholder="e.g., SimLab P1-X; desk clamp mounts; custom rig">
+        </div>
+      </div>
+    </fieldset>
+
+    <div>
+      <label for="notes">Anything else?</label>
+      <textarea id="notes" placeholder="Parts you already own, aesthetics, game list, plug standards, etc."></textarea>
+      <small class="disclaimer">By submitting, you agree we may contact you about your request. See our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</small>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn">Send via Email</button>
+      <a href="mailto:hello@lazydogcomputing.com" class="btn ghost">Email us directly</a>
+    </div>
+  </form>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Lazy Dog Computing</h4>
+      <p>High‑end computers for gaming, video & simulation — plus smart home automation.</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@lazydogcomputing.com">hello@lazydogcomputing.com</a></p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="systems.html">Custom Systems</a></li>
+        <li><a href="smarthome.html">Smart Home</a></li>
+        <li><a href="spec-intake.html">Spec Intake</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Info</h4>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container tiny">
+    <p>&copy; <span id="year"></span> Lazy Dog Computing. All rights reserved. · <a href="privacy.html">Privacy</a></p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
