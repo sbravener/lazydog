@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="theme-color" content="#0f1212">
+  <meta name="color-scheme" content="dark">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+  <input type="checkbox" id="theme-switch" class="theme-switch-input" aria-label="Toggle light theme">
+  <div class="site">
 <nav class="nav" role="navigation" aria-label="Main">
   <div class="container nav-container">
     <a class="logo" href="/index.html" aria-label="Lazy Dog Computing Home">
@@ -21,11 +25,19 @@
       <li role="none"><a role="menuitem" href="/spec-intake.html">Spec Intake</a></li>
       <li role="none"><a role="menuitem" href="/blog/">Blog</a></li>
     </ul>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch" aria-label="Toggle light theme">
+      <label for="theme-switch" title="Toggle light theme" aria-live="polite">
+        <span class="icon dark" aria-hidden="true">🌙</span>
+        <span class="icon light" aria-hidden="true">☀️</span>
+        <span class="label">Theme</span>
+      </label>
+    </div>
   </div>
 </nav>
-<main class="container">
-  {{ content }}
-</main>
+  <main class="container">
+    {{ content }}
+  </main>
 <footer class="footer">
   <div class="container footer-grid">
     <div>
@@ -54,6 +66,7 @@
     <p>&copy; <span id="year"></span> Lazy Dog Computing. All rights reserved. · <a href="/privacy.html">Privacy</a></p>
   </div>
 </footer>
+  </div><!-- /.site -->
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

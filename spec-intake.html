@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spec Intake | Lazy Dog Computing</title>
   <meta name="description" content="Tell us about your goals so we can propose the right build.">
-  <meta name="theme-color" content="#2E7D32">
+  <meta name="theme-color" content="#0f1212">
+  <meta name="color-scheme" content="dark">
   <meta name="keywords" content="custom gaming PC, video editing PC, creator workstation, flight simulator PC, driving simulator PC, HOTAS, yoke, rudder pedals, racing wheel, motion cockpit, Home Assistant, Raspberry Pi, smart home">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +29,9 @@
   <meta name="twitter:image" content="https://lazydogcomputing.com/assets/icons/og-1200x630.png">
 </head>
 <body>
+  <!-- Theme checkbox lives outside .site so we can use adjacent sibling selector -->
+  <input type="checkbox" id="theme-switch" class="theme-switch-input" aria-label="Toggle light theme">
+  <div class="site">
 <nav class="nav" role="navigation" aria-label="Main">
   <div class="container nav-container">
     <a class="logo" href="/index.html" aria-label="Lazy Dog Computing Home">
@@ -40,6 +44,14 @@
       <li role="none"><a role="menuitem" href="/spec-intake.html">Spec Intake</a></li>
       <li role="none"><a role="menuitem" href="/blog/">Blog</a></li>
     </ul>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch" aria-label="Toggle light theme">
+      <label for="theme-switch" title="Toggle light theme" aria-live="polite">
+        <span class="icon dark" aria-hidden="true">🌙</span>
+        <span class="icon light" aria-hidden="true">☀️</span>
+        <span class="label">Theme</span>
+      </label>
+    </div>
   </div>
 </nav>
 <header class="hero">
@@ -234,6 +246,35 @@
     <p>&copy; <span id="year"></span> Lazy Dog Computing. All rights reserved. · <a href="/privacy.html">Privacy</a></p>
   </div>
 </footer>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Lazy Dog Computing</h4>
+      <p>High‑end computers for gaming, video & simulation — plus smart home automation.</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@lazydogcomputing.com">hello@lazydogcomputing.com</a></p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/systems.html">Custom Systems</a></li>
+        <li><a href="/smarthome.html">Smart Home</a></li>
+        <li><a href="/spec-intake.html">Spec Intake</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Info</h4>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container tiny">
+    <p>&copy; <span id="year"></span> Lazy Dog Computing. All rights reserved. · <a href="/privacy.html">Privacy</a></p>
+  </div>
+</footer>
+  </div><!-- /.site -->
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
