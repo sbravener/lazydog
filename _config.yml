@@ -1,0 +1,7 @@
+title: Lazy Dog Computing
+description: Custom PCs for gaming, video & simulation — plus smart home.
+url: https://lazydogcomputing.com
+markdown: kramdown
+highlighter: rouge
+timezone: America/New_York
+permalink: /blog/:year/:month/:day/:title/
